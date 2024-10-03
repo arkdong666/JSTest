@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="openLight()">Open</button>
+    <img id="pic" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" />
+    <button
+      onclick="document.getElementById('pic').src='https://www.w3schools.com/js/pic_bulboff.gif'"
+    >
+      Close
+    </button>
+    <script>
+      function openLight() {
+        document.getElementById("pic").src =
+          "https://www.w3schools.com/js/pic_bulbon.gif";
+      }
+    </script>
+    <p id="demo">Hello</p>
+    <button onclick="changeText()">Change Text</button>
+
+    <p id="box">Box</p>
+    <button onclick="boxHide()">Hide Box</button>
+    <button onclick="boxShow()">Show Box</button>
+    <button onclick="boxTextChange()">Change boxText</button>
+    <button onclick="showHello()">show Hello</button>
+    <button onclick="showLet()">showLet</button>
+    <br />
+    <button onclick="unsignShift()">unsignShift</button>
+    <button onclick="signShift()">signShift</button>
+    <br />
+    <p id="demo2">Demo2</p>
+    <p id="demo3">Demo3</p>
+    <p id="demo4">Demo4</p>
+    <p id="demo5">Demo5</p>
+    <button onclick="showOperator()">show Operator</button>
+    <script src="app.js"></script>
+  </body>
+</html>
