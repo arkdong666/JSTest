@@ -106,3 +106,70 @@ StudentInfo.age = 20;
 console.log(StudentInfo);
 
 // console.log(StudentInfo.show("Ruby",123));
+
+let a = 11;
+let b = 110;
+let c = 110;
+
+if (a === b) {
+  console.log("a=b");
+  if (a == 11) {
+    // 嵌套
+    console.log("a= " + a);
+  }
+} else if (a === c) {
+  console.log("a=c");
+} else {
+  console.log("No match");
+}
+
+// let myNum = "3";
+// switch (myNum) {
+//   case 1:
+//     console.log("one");
+//     break;
+//   case 2:
+//     console.log("two");
+//     break;
+//   case 3:
+//     console.log("three");
+//     break;
+//   default:
+//     console.log("Not found");
+//     break;
+// }
+
+let userInput = "fds  fs";
+
+// let [x,y,z]=["10", "10",  "10"];
+let [xx, y, z] = [10, 10, 10];
+if (!userInput || userInput.trim() === "") {
+  console.log("Input is not a null valud");
+} else {
+  console.log("Pass");
+}
+
+let respomseStatus = 200;
+if (respomseStatus === 200) {
+  console.log("請求成功");
+} else if (respomseStatus === 404) {
+  console.log("資源未找到");
+} else {
+  console.log("未知的錯誤");
+}
+
+async function fetchData() {
+  try {
+    let response = await fetch("https://www.google.com");
+    if (response.ok) {
+      let data = await response.json();
+      console.log(data);
+    } else {
+      console.log("伺服器回傳錯誤", response.status);
+    }
+  } catch (error) {
+    console.log("請求失敗", error);
+  }
+}
+
+fetchData();
