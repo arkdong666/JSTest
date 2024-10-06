@@ -158,18 +158,107 @@ if (respomseStatus === 200) {
   console.log("未知的錯誤");
 }
 
-async function fetchData() {
-  try {
-    let response = await fetch("https://www.google.com");
-    if (response.ok) {
-      let data = await response.json();
-      console.log(data);
-    } else {
-      console.log("伺服器回傳錯誤", response.status);
-    }
-  } catch (error) {
-    console.log("請求失敗", error);
-  }
-}
+// async function fetchData() {
+//   try {
+//     let response = await fetch("https://www.google.com");
+//     if (response.ok) {
+//       let data = await response.json();
+//       console.log(data);
+//     } else {
+//       console.log("伺服器回傳錯誤", response.status);
+//     }
+//   } catch (error) {
+//     console.log("請求失敗", error);
+//   }
+// }
 
-fetchData();
+//fetchData();
+
+let result = "";
+for (let i = 0; i < 5; i++) {
+  result += i + " ";
+}
+console.log(result.trim());
+
+obj = { man: "tony", women: "Mary" };
+
+console.log(obj["man"]);
+
+//String Methods
+let str = "Hello, World";
+console.log("str= " + str.length); //有幾個字元。空白也算
+console.log(str.length - 1); //最後一個字元的索引
+console.log(str.charAt(0)); //索引值的內容
+console.log(str.charAt(str.length - 1)); //索引值取最後一個數
+console.log(str.charCodeAt(0)); //取字元的ASCII
+console.log(str.slice(0, 5)); // 索引 0~5 但不包含5
+console.log(str.slice(-1)); // 顯示最後一個值
+console.log(str.slice(-12, -7)); // 最後一個數值為 -1
+console.log(str.slice(-5)); // 顯示 World
+console.log(str.at(-2)); //支援負數
+console.log(str.charAt(-2)); //不支援負數（與 at()不同的地方）
+console.log(str.substring(-1, -5)); // 用法與slice相似，但substring不支援負數（換轉正）
+
+let mystr = "Hello, World";
+mystr[2] = "t";
+console.log(mystr[2]);
+
+console.log(mystr.toUpperCase()); //轉大寫
+console.log(mystr.toLowerCase()); //轉小寫
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = [7, 8, 9];
+let xyz = arr1 + arr2 + arr3;
+let xxx = arr1.concat(arr2, arr3);
+console.log(typeof xyz); // string
+console.log(arr1.concat(arr2, arr3)); //object
+console.log(xxx.push(10));
+console.log(xxx);
+
+let str1 = "Hello";
+let str2 = "lastName";
+let str3 = " MidName ";
+
+// console.log(str1.push(3));
+console.log(str3);
+
+console.log(str3.trimStart());
+// console.log(str3.padStart());
+console.log(str1.charAt(3));
+console.log(str1.charCodeAt(3));
+console.log(str3.repeat(5)); //重複5次
+console.log(str3.padStart(10, "*")); //補足元素值，若小於length，則無法顯示
+
+// let ax = str1.concat(str2,str3);
+let ax = str1 + str2 + str3;
+console.log(ax);
+
+// console.log(str3.eplace());
+
+// console.log(str3.padEnd(18,"-"))
+
+console.log(str1.split(","));
+
+let obj1 = { name: "Lily", age: 14 };
+let addobj1 = { ...obj, eye: "blue" };
+console.log(addobj1.eye);
+
+console.log(str1.replace());
+
+let ww = "0";
+let www = 10;
+
+console.log(ww / www );
+console.log((ww == www));
+console.log(ww===www);
+//  console.log(typeof );
+
+let xxxx = "Hello,Kitty,Hello KiKi"; 
+console.log(xxxx.replaceAll("Ki","JOJO"));
+let xxxxx  = undefined;
+console.log(typeof xxxxx);
+console.log(xxxx.split(","));
+
+console.log(typeof ww / www);
+
