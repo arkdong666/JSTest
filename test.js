@@ -249,16 +249,46 @@ console.log(str1.replace());
 let ww = "0";
 let www = 10;
 
-console.log(ww / www );
-console.log((ww == www));
-console.log(ww===www);
+console.log(ww / www);
+console.log(ww == www);
+console.log(ww === www);
 //  console.log(typeof );
 
-let xxxx = "Hello,Kitty,Hello KiKi"; 
-console.log(xxxx.replaceAll("Ki","JOJO"));
-let xxxxx  = undefined;
+let xxxx = "Hello,Kitty,Hello KiKi";
+console.log(xxxx.replaceAll("Ki", "JOJO"));
+let xxxxx = undefined;
 console.log(typeof xxxxx);
 console.log(xxxx.split(","));
 
 console.log(typeof ww / www);
+
+let by2 = "John";
+let by = new String("John");
+console.log(by === by2);
+
+console.log("fdf");
+
+let bby = new String("John"); // y is an object
+let bbx = "John"; // x is a string
+console.log(bbx == bby);
+
+let theString = "Hello Woo, Hello all, Hello";
+console.log('fdsf '+theString.indexOf("Hello",2)); //第一個出現Hello的索引值
+console.log(theString.lastIndexOf("Hello")); //最後一個出現 Hello 的索引值
+console.log(theString.search("all"));
+
+const app =  {
+  name: "Anger Bird",
+  type: "game",
+  version: 1.0,
+}
+
+console.log(app);
+
+// const rr = document.getElementById("de").innerText; 
+// const rr = document.getElementById("de").innerHTML
+const rr  = document.getElementById("de").textContent;
+console.log("rr= "+rr);
+
+
 
