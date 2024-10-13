@@ -290,5 +290,10 @@ console.log(app);
 const rr  = document.getElementById("de").textContent;
 console.log("rr= "+rr);
 
+let str12 ="Hello, World";
+console.log("good");
+
+
+
 
 
