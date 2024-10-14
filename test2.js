@@ -22,4 +22,12 @@ console.log(text2[6]);
 
 let xx = [1, 2, 3, null, "f"];
 
+console.log(history.length);
+console.clear();
+console.log("Hello");
+
+
+
+
+
 
