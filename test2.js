@@ -70,11 +70,34 @@ console.log(texts.indexOf("JavaScript")); //7
 console.log(texts.indexOf("JavaScript", 10)); //31(從索引10開始)
 console.log(texts.indexOf(1)); //-1(沒找到回傳-1 Number)
 console.log(texts.lastIndexOf("JavaScript")); //31
-console.log(texts.lastIndexOf("JavaScript", 6));  //由右向左搜尋
+console.log(texts.lastIndexOf("JavaScript", 6)); //由右向左搜尋
 console.log(texts.search("JavaScript")); //7
 console.log(texts.search(/JavaScript4/)); //7
 
-let dd = texts.match(/Java/g) //2
+let dd = texts.match(/Java/g); //2
 console.log(dd);
 // console.log());
+
+const arr = [123, "Tony"];
+console.log(arr);
+console.log(arr[0]); //123
+console.log(typeof arr[0]); //Number
+console.log(typeof arr[1]); //String
+console.log(arr.toString()); //123,Tony
+console.log(arr.length); //2
+console.log(arr.length - 1); //1
+console.log(arr[arr.length - 1]); //Tony
+console.log((arr[0] = 5));
+
+console.log(Number.MAX_VALUE); //1.7976931348623157e+308
+console.log(Number.MIN_VALUE); //5e-324
+console.log(Number.MAX_SAFE_INTEGER); //9007199254740991
+console.log(Number.MIN_SAFE_INTEGER); //-9007199254740991
+console.log(Number.POSITIVE_INFINITY); //Infinity
+console.log(Number.NEGATIVE_INFINITY); //-Infinity
+console.log(Number.NaN); //NaN
+console.log(typeof Number.NaN); //number
+
+let xxx = 100 / "Tony";
+console.log(xxx);
 
